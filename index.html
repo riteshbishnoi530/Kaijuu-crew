@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaijuu Crew</title>
+    <!-- ===========godzilla font family -->
+    <link href="https://fonts.cdnfonts.com/css/godzilla" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    screens: {
+                        xl: '1320px',
+                    },
+                },
+                fontFamily: {
+                    'godzilla': ['Godzilla', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        offRed: '#FF002A',
+                        offBlack: '#141313',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#001120]">
+    <!-- ==========================header============= -->
+    <section class="bg-[url(./assets/images/webp/header-bg.webp)] bg-center bg-cover bg-no-repeat">
+        <!--=========================navbar===============-->
+        <nav class="bg-offBlack relative z-20 py-[29px] px-3">
+            <div class="container">
+                <div class="justify-between flex items-center">
+                    <div class="relative z-20">
+                        <a class="text-4xl font-normal font-godzilla text-offRed" href="/">
+                            Kaijuu <span class="font-godzilla text-white">Crew</span>
+                        </a>
+                    </div>
+                    <div onclick="navmenu()"
+                        class="lg:hidden cursor-pointer z-10 w-7 h-4 translate-y-1 flex flex-col justify-between">
+                        <span id="nav_line_1"
+                            class="h-[2px] w-4 ml-auto bg-white origin-left transition-all duration-300 rounded-md"></span>
+                        <span id="nav_line_2"
+                            class="w-full h-[2px] transition-all duration-300 bg-white origin-left rounded-md"></span>
+                    </div>
+                    <div id="mobile_view"
+                        class="max-lg:fixed flex flex-col justify-center items-center max-lg:bg-transparent backdrop-blur-[60px] max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all ease-in-out duration-300">
+                        <ul class="flex gap-[53px] max-lg:text-center max-lg:flex-col">
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()" href="#about">About
+                                    Us</a></li>
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()"
+                                    href="#story">Story</a></li>
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()"
+                                    href="#traits">Traits</a></li>
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()"
+                                    href="#roadmap">Roadmap</a></li>
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()"
+                                    href="#team">Team</a></li>
+                            <li><a class="text-custom-sm font-normal text-white" onclick="navmenu()" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ============ -->
+        <div class="max-w-[1363px] justify-between gap-3 mx-auto flex max-xl:flex-col pt-14 px-3">
+            <div class="max-w-[593px] max-xl:max-w-full">
+                <h1
+                    class="text-[135px] max-lg:text-8xl max-md:text-7xl max-sm:text-6xl text-white font-godzilla max-w-[156px] leading-[95%]">
+                    <span class="text-offRed font-godzilla">Kaijuu</span>
+                    Crew
+                </h1>
+                <p
+                    class="text-custom-sm text-white font-normal max-w-[329px] max-xl:max-w-[600px] leading-[150%] mt-[18px]">
+                    The ocean surges
+                    with
+                    spray and foam,
+                    As Kaijuu rise from depth to roam.
+                    Thirty-three hundred, and thirty-three more,
+                    Decked in garbs from days of yore.
+                    We scour the earth and sea and air,
+                    Our mission so grave few would dare.
+                    In search of untold wealth to hoard?
+                    Nay, but 'cause your Apes are Bored.
+                </p>
+                <p class="text-5xl max-sm:text-3xl font-bold text-white mr-[18px] leading-[150%]">10:20:15:10</p>
+                <p class="text-lg font-normal opacity-60 text-white leading-[150%]">Days left</p>
+                <div class="flex gap-4 max-sm:flex-col max-sm:max-w-[212px] mt-[18px]">
+                    <button
+                        class="bg-offRed py-3 uppercase px-9 text-white text-lg font-bold rounded-lg flex items-center"><img
+                            class="mr-3" src="./assets/images/svg/discord-white.svg" alt="discord"> JOIN
+                        DISCORD</button>
+                    <button
+                        class="bg-offRed py-3 uppercase px-9 text-white text-lg font-bold rounded-lg flex items-center">Connect
+                        Wallet</button>
+                </div>
+            </div>
+            <div class="max-w-[707px] max-xl:mx-auto">
+                <img src="./assets/images/webp/header-img.webp" alt="header-img">
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <div class="flex slide-scroll-left">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-1.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-2.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-3.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-4.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-5.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-6.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-7.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-8.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-9.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-10.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-11.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-12.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-13.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-14.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-15.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-16.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-17.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-18.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-19.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-20.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-21.svg" alt="">
+                <img class="max-lg:h-[200px] max-md:h-[160px] max-sm:h-[100px] item"
+                    src="./assets/images/svg/slide-22.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================about us================== -->
+    <section id="about" class="pt-[61px] pb-[135px] px-3">
+        <div class="container flex flex-wrap max-lg:gap-12 items-center">
+            <div class="w-1/2 max-lg:w-full">
+                <p
+                    class="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl text-white font-godzilla leading-[95%]">
+                    <span class="text-offRed font-godzilla">About</span>
+                    Us
+                </p>
+                <p class="text-custom-sm text-white font-normal max-w-[648px] leading-[150%] mt-7">It was popularised in
+                    the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.</p>
+                <button
+                    class="bg-offRed py-3 uppercase px-9 text-white text-lg font-bold rounded-lg flex items-center leading-[150%] tracking-widest mt-[34px]">Mint
+                    NFT</button>
+            </div>
+            <div class="w-1/2 max-lg:w-full">
+                <div class="flex justify-end max-lg:justify-center max-sm:flex-col">
+                    <img class="max-w-[286px] max-xl:max-w-[250px] max-sm:max-w-full w-full max-sm:mx-auto"
+                        src="./assets/images/webp/about-1img.webp" alt="about-1img">
+                    <img class="max-w-[286px] max-xl:max-w-[250px] max-sm:max-w-full w-full max-sm:mx-auto"
+                        src="./assets/images/webp/about-2img.webp" alt="about-2img">
+                </div>
+                <div class="flex justify-end max-lg:justify-center max-sm:flex-col">
+                    <img class="max-w-[286px] max-xl:max-w-[250px] max-sm:max-w-full w-full max-sm:mx-auto"
+                        src="./assets/images/webp/about-3img.webp" alt="about-1img">
+                    <img class="max-w-[286px] max-xl:max-w-[250px] max-sm:max-w-full w-full max-sm:mx-auto"
+                        src="./assets/images/webp/about-4img.webp" alt="about-2img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========Kaijuu Crew Classes============= -->
+    <section class="bg-[url(./assets/images/webp/classes-bg.webp)] bg-center bg-cover bg-no-repeat pt-[171px] pb-[225px]">
+        <p
+                    class="text-7xl max-lg:text-6xl text-center mb-[85px] max-md:text-5xl max-sm:text-4xl text-white font-godzilla leading-[95%]">
+                    <span class="text-offRed font-godzilla">Kaijuu</span>
+                    Crew Classes
+                </p>
+        <div class="flex max-w-[1794px] mx-auto gap-10 flex-wrap justify-between max-2xl:justify-center">
+            <div class="max-w-[254px]">
+                <img src="./assets/images/webp/scouts.webp" alt="scouts">
+                <p class="text-4xl font-semibold text-white leading-[150%] mt-[18px] text-center">Scouts</p>
+            </div>
+            <div class="max-w-[254px]">
+                <img src="./assets/images/webp/heavies.webp" alt="heavies">
+                <p class="text-4xl font-semibold text-white leading-[150%] mt-[18px] text-center">Heavies</p>
+            </div>
+            <div class="max-w-[254px]">
+                <img src="./assets/images/webp/legends.webp" alt="legends">
+                <p class="text-4xl font-semibold text-white leading-[150%] mt-[18px] text-center">Legends</p>
+            </div>
+            <div class="max-w-[254px]">
+                <img src="./assets/images/webp/elements.webp" alt="elements">
+                <p class="text-4xl font-semibold text-white leading-[150%] mt-[18px] text-center">Elementals</p>
+            </div>
+            <div class="max-w-[254px]">
+                <img src="./assets/images/webp/legends.webp" alt="legends">
+                <p class="text-4xl font-semibold text-white leading-[150%] mt-[18px] text-center">???</p>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
