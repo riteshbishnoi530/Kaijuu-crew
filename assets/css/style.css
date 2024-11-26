@@ -28,3 +28,40 @@
   .slide-scroll-left:hover {
     animation-play-state: paused;
   }
+  .blur-1 {
+    backdrop-filter: blur(35px);
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(141.11deg, rgba(255, 255, 255, 0.25) -1.59%, rgba(255, 255, 255, 0.09) 102.57%);
+  }
+
+  .blue-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: white;
+    z-index: 1;
+  }
+
+  /* =============== */
+  .slick-track{
+    display: flex !important;
+    gap: 24px !important;
+  }
+
+  .prev-parent:hover .prev{
+    transform: rotateX(180deg);
+  }
+  .next-parent:hover .next{
+    transform: rotateX(180deg);
+  }
+
+  .slick-dots li button:before{
+    font-size: 30px !important;
+    color: white !important;
+    opacity: 30% !important;
+  }

@@ -8,6 +8,10 @@
     <!-- ===========godzilla font family -->
     <link href="https://fonts.cdnfonts.com/css/godzilla" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -232,7 +236,7 @@
     <section class="pt-16 pb-24 px-3">
         <div class="container flex items-center max-lg:flex-col-reverse">
             <div class="w-1/2 max-lg:w-full">
-                <img class="max-w-[619px] w-full max-xl:max-w-[450px] max-lg:mx-auto max-lg:max-w-[700px]"
+                <img class="max-w-[619px] w-full max-xl:max-w-[500px] max-lg:mx-auto max-lg:max-w-[700px]"
                     src="./assets/images/webp/story.webp" alt="story">
             </div>
             <div class="w-1/2 max-lg:w-full">
@@ -256,16 +260,18 @@
     </section>
 
     <!-- ===========traits========== -->
-    <section>
+    <section
+        class="px-3 pt-[97px] pb-[140px] bg-[url(./assets/images/webp/traits-bg.webp)] bg-cover bg-no-repeat bg-center">
         <div class="container">
             <p
                 class="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl text-offRed text-center mb-10 font-godzilla leading-[95%]">
                 Traits</p>
-            <div class="flex items-center">
-                <div class="max-w-[738px]">
+            <div class="flex max-lg:flex-col items-center justify-between">
+                <div
+                    class="max-w-[738px] max-2xl:max-w-[600px] max-lg:max-w-[700px]  max-xl:max-w-[500px] max-2xl:ml-0 -ml-11">
                     <img class="w-full" src="./assets/images/webp/traits.webp" alt="traits">
                 </div>
-                <div class="w-[590px] w-ful border bg-transparent backdrop-blur-[35%] border-red-500 border-solid rounded-3xl p-10">
+                <div class="w-[590px] w-ful border bg-transparent backdrop-blur-[35%] rounded-3xl p-10 blur-1">
                     <p class="text-5xl text-white font-godzilla leading-[95%]">
                         Traits</p>
                     <div class="bg-white opacity-20 w-full h-1 mt-[26px]"></div>
@@ -299,6 +305,57 @@
             </div>
         </div>
     </section>
+
+    <!-- =================team=============== -->
+    <section>
+        <div class="flex max-2xl:flex-col max-w-[1535px] mx-auto items-center">
+            <div class="prev-parent max-2xl:!hidden">
+                <img class="prev transition-all ease-linear duration-300 max-w-[74px]"
+                    src="./assets/images/svg/red-prev.svg" alt="red-prev">
+            </div>
+            <div class="container">
+                <div class="flex slider">
+
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/blank.webp" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/blank.webp" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/boss-kaiju.webp" alt="boss-kaiju">
+                        <p class="font-normal text-white text-center text-4xl">Boss Kaijuu</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/blank.webp" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/blank.webp" alt="blank">
+                        <p class="font-normal text-white text-center text-4xl">???</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                    <div class="max-w-[424px]">
+                        <img src="./assets/images/webp/boss-kaiju.webp" alt="boss-kaiju">
+                        <p class="font-normal text-white text-center text-4xl">Boss Kaijuu</p>
+                        <p class="font-normal text-white text-center text-lg mt-2">KJC#29</p>
+                    </div>
+                </div>
+            </div>
+            <div class="next-parent max-2xl:!hidden">
+                <img class="next transition-all ease-linear duration-300 max-w-[74px]"
+                    src="./assets/images/svg/red-next.svg" alt="red-next">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
