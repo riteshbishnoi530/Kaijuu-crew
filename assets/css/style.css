@@ -28,14 +28,35 @@
   .slide-scroll-left:hover {
     animation-play-state: paused;
   }
-  .blur-1 {
-    backdrop-filter: blur(35px);
+  .blur-custom {
+    backdrop-filter: blur(35px) !important;
     position: relative;
     border-radius: 30px;
     background: linear-gradient(141.11deg, rgba(255, 255, 255, 0.25) -1.59%, rgba(255, 255, 255, 0.09) 102.57%);
+    border: 1px solid #4B6778;
   }
 
-  .blue-1::before {
+  .blue-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: white;
+    z-index: 1;
+  }
+
+  .blur-faq {
+    backdrop-filter: blur(35px) !important;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(141.11deg, rgba(255, 255, 255, 0.25) -1.59%, rgba(255, 255, 255, 0.09) 102.57%);
+    border: 1px solid #4B6778;
+  }
+
+  .blue-faq::before {
     content: '';
     position: absolute;
     top: 0;
@@ -61,7 +82,18 @@
   }
 
   .slick-dots li button:before{
-    font-size: 30px !important;
-    color: white !important;
+    color: transparent !important;
+    background-color: white;
     opacity: 30% !important;
+    width: 20px !important;
+    height: 10px !important;
+    border-radius: 30px;
+  }
+
+  .slick-dots li.slick-active button:before{
+    color: transparent !important;
+    background-color: white;
+    opacity: 100% !important;
+    width: 20px !important;
+
   }

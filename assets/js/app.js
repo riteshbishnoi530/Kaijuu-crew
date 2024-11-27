@@ -32,15 +32,38 @@ $(document).ready(function () {
           autoplaySpeed: 3000,
         }
       },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      }
     ]
   });
 });
+
+// ===================faq=========
+document.addEventListener('DOMContentLoaded', () => {
+  const firstItem = document.querySelector('.accordion-item');
+  toggleAccordion(firstItem, true);
+});
+
+function toggleAccordion(element, forceOpen = false) {
+  const container = document.getElementById('accordion-container');
+  const allItems = container.querySelectorAll('.accordion-item');
+  const content = element.querySelector('.accordion-content');
+  const icon = element.querySelector('.accordion-icon');
+
+  allItems.forEach((item) => {
+      const itemContent = item.querySelector('.accordion-content');
+      const itemIcon = item.querySelector('.accordion-icon');
+      if (item !== element) {
+          itemContent.classList.add('hidden');
+          item.classList.remove('bg-gray-700');
+          itemIcon.style.transform = 'rotate(0deg)';
+      }
+  });
+
+  if (forceOpen || content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+  } else {
+      content.classList.add('hidden');
+      element.classList.remove('bg-gray-700');
+      icon.style.transform = 'rotate(0deg)';
+  }
+}
