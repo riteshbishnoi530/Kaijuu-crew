@@ -5,12 +5,11 @@
 }
 
 /* ===============custom font size========== */
-
 .text-custom-sm{
     font-size: 22px;
 }
 
-
+/* =============header slider========= */
 @keyframes slide-right {
     0% {
       transform: translateX(0%);
@@ -28,6 +27,8 @@
   .slide-scroll-left:hover {
     animation-play-state: paused;
   }
+
+  /* =================traits=========== */
   .blur-custom {
     backdrop-filter: blur(35px) !important;
     position: relative;
@@ -48,6 +49,7 @@
     z-index: 1;
   }
 
+  /* ===============faq============= */
   .blur-faq {
     backdrop-filter: blur(35px) !important;
     position: relative;
@@ -68,7 +70,7 @@
     z-index: 1;
   }
 
-  /* =============== */
+  /* ===============team=========== */
   .slick-track{
     display: flex !important;
     gap: 24px !important;
