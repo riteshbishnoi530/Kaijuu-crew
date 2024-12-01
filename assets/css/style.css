@@ -3,6 +3,9 @@
 *{
     font-family: "Oswald", serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* ===============custom font size========== */
 .text-custom-sm{
@@ -16,7 +19,7 @@
     }
 
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
   }
 
@@ -74,6 +77,9 @@
   .slick-track{
     display: flex !important;
     gap: 24px !important;
+  }
+  .slick-dots{
+    bottom: -50px !important;
   }
 
   .prev-parent:hover .prev{

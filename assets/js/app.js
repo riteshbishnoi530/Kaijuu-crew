@@ -67,3 +67,9 @@ function toggleAccordion(element, forceOpen = false) {
       icon.style.transform = 'rotate(0deg)';
   }
 }
+
+// =============back to top===========
+
+const backTop = document.querySelector(".back-top");
+backTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+window.onscroll = () => backTop.style.opacity = window.scrollY > 150 ? 1 : 0
