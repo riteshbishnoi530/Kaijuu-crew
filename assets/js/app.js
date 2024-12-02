@@ -68,6 +68,21 @@ function toggleAccordion(element, forceOpen = false) {
   }
 }
 
+// =============navbar dropdown============
+document.getElementById("language-select").addEventListener("change", function () {
+  const selectedValue = this.value;
+  const flagImg = document.getElementById("country-flag");
+
+  if (selectedValue === "HIN") {
+      flagImg.src = "./assets/images/svg/india-flag.svg";
+  } 
+  else if (selectedValue === "ENG") {
+      flagImg.src = "./assets/images/svg/country-flag.svg";
+  }
+});
+
+
+
 // =============back to top===========
 
 const backTop = document.querySelector(".back-top");
