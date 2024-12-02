@@ -6,7 +6,7 @@ const navmenu = () => {
   document.getElementById("nav_line_2").classList.toggle("-rotate-45");
   document.getElementById("nav_line_2").classList.toggle("translate-y-[6px]");
   document.getElementById("nav_line_1").classList.toggle("w-full");
-  document.body.classList.toggle("overflow-hidden");
+  document.body.classList.toggle("max-lg:overflow-hidden");
 };
 
 // ===================slider=============
