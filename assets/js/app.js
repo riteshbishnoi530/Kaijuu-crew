@@ -86,5 +86,18 @@ document.getElementById("language-select").addEventListener("change", function (
 // =============back to top===========
 
 const backTop = document.querySelector(".back-top");
-backTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
-window.onscroll = () => backTop.style.opacity = window.scrollY > 150 ? 1 : 0
+
+backTop.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+window.onscroll = () => {
+  if (window.scrollY > 150) {
+    backTop.classList.remove("hidden");
+    backTop.classList.add("block");
+  } else {
+    backTop.classList.remove("block");
+    backTop.classList.add("hidden");
+  }
+};
+
